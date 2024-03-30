@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let my_obj = {
+            name:"ANAS KHAN",
+            age:"23",
+            institute:"Aptech institute",
+            courses:{
+                programing:"javascript",
+                designing:"css",
+                graphic:{
+                    image:"photoshop",
+                    video:"videoaditing",
+                    vector:["adobe illustrator","adobe photoshop"],
+                    grade:{
+                        grade1:"A",
+                        grade2:"B",
+                        grade3:"C",
+                        grade4:"D",
+                        grade5:"E",
+                        per:[90,80,70,60,50],
+
+
+                    }
+                }
+            }
+        };
+        document.write(`my name is ${my_obj.name}<br>my age is ${my_obj.age}<br> and my institute is ${my_obj.institute}<br> And my courses is ${my_obj.courses.designing} <br> And my passion is ${my_obj.courses.graphic.vector[1]} <br> And my grade is ${my_obj.courses.graphic.grade.grade1}<br> and my percentage is ${my_obj.courses.graphic.grade.per[1]}`)
+        
+    </script>
+</body>
+</html>
